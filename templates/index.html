@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Semantic resume scanner</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./../static/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="./../static/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="./../static/css/style.css">
+</head>
+<body>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <a class="navbar-brand" href="#">Resume scanner</a>
+     <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+     </div>
+    </nav>
+    <!--/.Navbar-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn my-5">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">Semantic resume scanner</h3>
+            <p>A semantic analysis and classification of resumes based on roles and experience needs of an organization. We will be applying NLP techniques to read different formats, and Machine Learning Algorithms to classify the concerned resumes accordingly.</p>
+            <!-- Main heading -->
+
+            <hr>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section>
+
+        <h3 class="h3 text-center mb-5">Check resume</h3>
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 px-4">
+
+           <!-- Card -->
+            <div class="card">
+
+              <!-- Card image -->
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title"><a>Scan a resume</a></h4>
+                <!-- Text -->
+                <p class="card-text">Upload a resume for semantic analysis and classification.</p>
+                <!-- Button -->
+
+                  <form action = "/upload" method = "post" enctype="multipart/form-data">
+
+
+                      <div class="custom-file">
+                        <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                      </div>
+
+                      <br>
+{#                    <input type="file" name="file" />#}
+                    <input class="btn btn-primary" type = "submit" value="Upload">
+{#                      <a href="#" class="btn btn-primary">Upload</a>#}
+                </form>
+
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+
+              <!-- Card -->
+            <div class="card">
+
+              <!-- Card image -->
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+
+              <!-- Card content -->
+              <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title"><a>Scan multiple resumes</a></h4>
+                <!-- Text -->
+                <p class="card-text">Upload a zip file of resumes for semantic analysis and classification.</p>
+                <!-- Button -->
+
+                  <form action = "/bulk-upload" method = "post" enctype="multipart/form-data">
+
+
+                      <div class="custom-file">
+                        <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                      </div>
+
+                      <br>
+{#                    <input type="file" name="file" />#}
+                    <input class="btn btn-primary" type = "submit" value="Upload">
+{#                      <a href="#" class="btn btn-primary">Upload</a>#}
+                </form>
+
+
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+    </div>
+
+  </main>
+
+  {{ result }}
+  <!-- End your project here-->
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="./../static/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./../static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./../static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="./../static/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
