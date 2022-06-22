@@ -5,5 +5,5 @@ Flask==1.1.1
 sklearn==0.0
 PyPDF2==1.26.0
 nltk==3.4.5
-numpy==1.17.2
+numpy==1.22.0
 gensim==3.8.0
